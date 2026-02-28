@@ -10,7 +10,7 @@ route:
 receivers:
   - name: 'combined-receiver'
     telegram_configs:
-      - bot_token: "8660933808:AAFzB8LE4xpsxu9JNebGQY0A21O3439P5u4" # Bot token from @BotFather
-        chat_id: 1183078434               # Your Chat ID from @userinfobot
+      - bot_token: "##########:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        chat_id: 1183078434               
         send_resolved: true
 
