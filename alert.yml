@@ -1,0 +1,12 @@
+groups:
+- name: instance-alerts
+  rules:
+  - alert: InstanceDown
+    expr: up == 0
+    for: 1m
+    keep_firing_for: 5m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Instance {{ $labels.instance }} down"
+      description: "{{ $labels.cloud }} of ip {{ $labels.ip }} has been down for more than 1 minutes."

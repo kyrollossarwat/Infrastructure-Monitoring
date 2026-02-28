@@ -1,0 +1,16 @@
+global:
+
+route:
+  group_by: ['alertname']
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+  receiver: 'combined-receiver' # Default receiver
+
+receivers:
+  - name: 'combined-receiver'
+    telegram_configs:
+      - bot_token: "8660933808:AAFzB8LE4xpsxu9JNebGQY0A21O3439P5u4" # Bot token from @BotFather
+        chat_id: 1183078434               # Your Chat ID from @userinfobot
+        send_resolved: true
+
